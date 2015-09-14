@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" 	href="validate.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="validate.js"></script>
+	</head>
+	<body>
+		<form name="test">
+			<div>
+				<div>Numeric</div>
+				<input type="text" class="numeric" name="num">
+			</div>
+			<div>
+				<div>Required</div>
+				<input type="text" class="required" name="req">
+			</div>
+			<div>
+				<div>Required Size (5) + Numeric</div>
+				<input type="text" class="required-size numeric" maxlength="5" name="reqsize">
+			</div>
+			<div>
+				<div>Required Size (4) + Required</div>
+				<input type="text" class="required-size required" maxlength="4" name="reqsize_req">
+			</div>
+			<div>
+				<div>Required Size (3) + Numeric + Required</div>
+				<input type="text" class="required-size numeric required" maxlength="3" name="multiple">
+			</div>
+			<div>
+				<input type="submit" value="Submit">
+			</div>
+		</form>
+		
+		<form name="test2">
+			<div>
+				<div>Numeric</div>
+				<input type="text" class="numeric" name="num2">
+			</div>
+			<div>
+				<div>Required</div>
+				<input type="text" class="required" name="req2">
+			</div>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+	
+</html>
